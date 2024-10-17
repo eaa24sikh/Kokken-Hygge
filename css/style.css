@@ -1,0 +1,440 @@
+/* basic css reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; 
+}
+/* my css starts below */
+
+/*generalt start*/
+@font-face {
+    font-family: 'duran';
+    src: url('Duran-Medium.ttf') format('truetype'); /* Path to the font */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  
+    background-image:linear-gradient(rgb(229, 13, 13),rgb(230, 95, 95));
+    background-color:rgb(234, 2, 2);
+    font-family: 'duran';
+
+
+}
+/*header start*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-family: 'duran';
+    background-color: white;
+    
+
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+
+    .forside-link{
+        max-width: 180px;
+    }
+   
+
+    .opskrifter{
+        padding-left: 20px;
+        padding-right: 20px;
+       
+    }
+    .restauranter{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .abonnerer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+/*gør link ikke blå*/
+}
+a.nav-link:link
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:hover
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.nav-link:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+
+/* header slut*/
+
+/*footer start*/
+footer{
+    background-color: white;
+    .logomn{
+        display: block;
+        margin: auto;
+        width: 50%;
+
+
+    }
+
+   
+}
+/*flexbox til footer*/
+
+
+#omring {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.infomation {
+    
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    text-align: center;
+    line-height: 160%;
+}
+
+
+
+.cloche {
+    
+    width: 20%;
+
+}
+/*footer slut*/
+
+/*generalt slut*/
+
+
+/*forside specifik start*/
+.overskrift1{
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    width: 700px;
+    height: auto;
+    color:white;
+}
+
+
+.introtext{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    width: 700px;
+    height: auto;
+   line-height: 155%;
+   color: white;
+}
+
+.kur{
+    border-radius:47px ;
+    width: 40%;
+    height: 38%;
+    margin-left: 5%;
+    margin-right:5%;
+   margin-top: 15%;
+   margin-bottom: 10%;
+}
+.kød{
+    border-radius:38px ;
+    width: 39%;
+    height: 40%;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+/*forside specifik slut*/
+
+/*opskrift spesifik start*/
+
+.madet{
+    max-width: 60%;
+}
+.madto{
+    max-width: 60%;
+}
+.overskrift2{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color:white;
+    font-size: 35px;
+}
+
+
+.box-wrapper {
+    margin-bottom: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#box1 {
+    padding: 10px;
+}
+
+
+#box3 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#box4 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 30%;
+    max-width: 30%;
+    min-height: 480px;
+    max-height: 500px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.middle-column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ingrediens-row{
+    display: flex;
+  flex-direction: row;
+}
+.ingrediens-fylde{
+  min-width: 25px;
+  flex-grow: 1;
+  text-align: center;
+}
+.ingrediens-list{
+    margin-top: 15px;
+}
+
+.se-vejledning{
+    background-color: #f00b0b;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+
+}
+
+.vejledning-knap{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+/*opskrift specifik slut*/
+
+/*abonnerer specifik start*/
+
+.form-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup{
+    background-color: rgb(245, 168, 168);
+    width: 100%;
+    height: 50%;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+.typefelt{
+    margin-left: 15px;
+    margin-right: 10px;
+    font-size: 20px;
+    float: left;
+    clear: left;
+    width: 100px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: right;
+
+    
+}
+.skrive-felt{
+    background-color: rgb(250, 250, 251);
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    display: inline-block;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 80px;
+
+    border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.submit-knap{
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 30%;
+  font-size: 30px;
+
+}
+
+/*abonnerer specifik slut*/
+
+/*artikkel specifik start*/
+
+
+
+
+
+#rubrik {
+    padding: 10px;
+}
+
+.under-rubrik {
+    padding: 8px;
+}
+
+
+.box-brodtext {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.brodtext{
+    color:white;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 5%;
+    line-height:40px;
+}
+
+
+
+
+.introtext2{
+    color: white;
+    font-size: large;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-bottom: 10%;
+    line-height:40px;
+}
+.underoverskrift{
+    color: white;
+    font-size: 22px;
+    padding-bottom: 2%;
+}
+/*restaurant specifik start*/
+
+.billede-restaurant{
+    width: 30%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
+.knap-restaurant-liste{
+    background-color: rgb(231, 14, 14);
+    height: 40px;
+    width: 15%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.full-width{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restaurant-liste{
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+
+/*restaurant specifik slut*/
+
+
+/*kur artikel specifik start*/
+.box3 {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+
+
+.box-billede{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+
+}
+
+
+.billede-til-kur{
+    width: 100%;
+}
+
+
+
+.box-brodtext-kur {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+/*kur artikel specifik slut*/
